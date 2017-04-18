@@ -1,0 +1,26 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".MainActivity">
+
+
+	<TextView
+		android:id="@+id/myLocationText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/hello" />
+	
+	<fragment
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:map="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/map"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		class="com.google.android.gms.maps.MapFragment"
+		map:cameraTargetLat="43.04385326"
+		map:cameraTargetLng="-87.90920477"/>
+		
+</LinearLayout>
